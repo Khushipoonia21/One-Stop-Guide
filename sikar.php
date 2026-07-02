@@ -5,281 +5,319 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sikar - One Stop Guide</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     :root {
-  --primary-bg: #161d27;
-  --secondary-bg: #232b39;
-  --accent: #ce8186;
-  --accent-light: #e27f7f;
-  --text-main: #f3f6fa;
-  --text-secondary: #b7bcca;
-  --muted: #353c4a;
-  --card-bg: #232b39;
-  --border: #232f42;
-  --gallery-hover: #f49da9;
-  --error: #ff3e5e;
-}
-* {
-  margin: 0; padding: 0; box-sizing: border-box;
-}
-body {
-  font-family: 'Roboto','Poppins',sans-serif;
-  background: var(--primary-bg);
-  color: var(--text-main);
-  line-height: 1.7;
-  min-height: 100vh;
-}
-header {
-  background: var(--secondary-bg);
-  box-shadow: 0 1.5px 10px rgba(30,40,50,0.19);
-  padding: 0.55rem 0;      /* LESS THICK NAVBAR */
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.header-container {
-  max-width: 1180px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.2rem;
-}
-.logo {
-  font-family: 'Poppins',sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--accent);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 0.18em 0.5em;
-  background: transparent;
-  border-radius: 6px;
-  transition: background 0.14s, color 0.16s;
-  cursor: pointer;
-}
-.logo:hover {
-  color: var(--accent-light);
-  background: var(--muted);
-}
-nav ul {
-  display: flex;
-  gap: 1.1rem;          /* compact spacing */
-  list-style: none;
-}
-nav ul li a {
-  color: var(--text-main);
-  background: transparent;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.35rem 0.90rem;
-  border-radius: 7px;
-  letter-spacing: 0.5px;
-  transition: background 0.16s, color 0.18s;
-}
-nav ul li a:hover,
-nav ul li a.active {
-  background: var(--accent);
-  color: var(--primary-bg);
-}
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  background: var(--card-bg);
-  border-radius: 18px;
-  max-width: 1200px;
-  margin: 2.3rem auto 3rem;
-  box-shadow: 0 14px 44px rgba(25,35,60,0.25);
-  overflow: hidden;
-  border: 1.5px solid var(--border);
-}
-.hero-img {
-  flex: 1 1 400px;
-  min-width: 320px;
-  max-height: 420px;
-  display: flex;
-  align-items: stretch;
-  background: linear-gradient(120deg, #22334d 35%, #294935 100%);
-}
-.hero-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(0.09) contrast(1.08) brightness(0.95);
-  transition: filter 0.36s, transform 0.18s;
-  cursor: pointer;
-}
-.hero-img img:hover {
-  filter: none;
-  transform: scale(1.035);
-}
-.hero-content {
-  flex: 2 1 540px;
-  padding: 2.7rem 2.5rem 2.8rem 2.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(135deg, rgba(19,30,41, 0.85) 65%, #232b39 100%);
-}
-.hero-content h1 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 2.6rem;
-  color: var(--accent);
-  margin-bottom: 1.05rem;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -1px;
-}
-.hero-content p {
-  font-size: 1.15rem;
-  color: var(--text-secondary);
-  font-weight: 400;
-  margin-bottom: 1.7rem;
-  max-width: 580px;
-  letter-spacing: 0.01em;
-}
-.btn-primary {
-  background: var(--accent);
-  color: var(--primary-bg);
-  padding: 0.75rem 2.1rem;
-  font-size: 1.07rem;
-  border: none;
-  border-radius: 22px;
-  cursor: pointer;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  box-shadow: 0 4px 15px rgba(54, 226, 167, 0.09);
-  text-transform: uppercase;
-  transition: background 0.15s, color 0.16s, box-shadow 0.18s;
-  margin-top: 0.5rem;
-}
-.btn-primary:hover {
-  background: var(--accent-light);
-  color: var(--primary-bg);
-  box-shadow: 0 7px 18px var(--gallery-hover);
-}
+      --primary-bg: #161d27;
+      --secondary-bg: #232b39;
+      --accent: #ce8186;
+      --accent-light: #e27f7f;
+      --text-main: #f3f6fa;
+      --text-secondary: #b7bcca;
+      --muted: #353c4a;
+      --card-bg: #232b39;
+      --border: #232f42;
+      --gallery-hover: #f49da9;
+      --error: #ff3e5e;
+    }
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto','Poppins',sans-serif;
+      background: var(--primary-bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
 
-.more-info {
-  max-width: 780px;
-  margin: 2rem auto 4rem;
-  background: var(--card-bg);
-  padding: 2.1rem 2.8rem;
-  border-radius: 13px;
-  box-shadow: 0 7px 30px #11182566;
-  font-size: 1.10rem;
-  color: var(--text-secondary);
-  border-left: 6.5px solid var(--accent);
-  animation: fadeIn 0.8s ease both;
-  display: none;
-}
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(18px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-.sikar-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.18rem;
-  max-width: 1000px;
-  margin: 2rem auto 2.7rem;
-  justify-content: center;
-}
-.sikar-gallery img {
-  width: 222px;
-  height: 146px;
-  object-fit: cover;
-  border-radius: 9px;
-  border: 2.5px solid var(--muted);
-  background: var(--secondary-bg);
-  box-shadow: 0 3px 13px rgba(50,210,170,0.09);
-  margin-bottom: 0.25rem;
-  filter: grayscale(0.18) brightness(0.93);
-  transition: transform 0.2s, box-shadow 0.15s, border 0.13s, filter 0.13s;
-}
-.sikar-gallery img:hover {
-  transform: scale(1.05) rotate(-2deg);
-  border-color: var(--accent);
-  box-shadow: 0 8px 30px var(--gallery-hover);
-  filter: none;
-}
+    /* UNIFIED HEADER STYLES */
+    header {
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(13, 235, 87, 0.1);
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Poppins',sans-serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: #0c0d35;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.18em 0.5em;
+      background: transparent;
+      border-radius: 6px;
+      transition: background 0.14s, color 0.16s;
+      cursor: pointer;
+    }
+    .logo:hover {
+      background: #f0f0f0;
+    }
+    nav ul {
+      display: flex;
+      gap: 1.1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #e37907d2;
+      background: transparent;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.35rem 0.90rem;
+      border-radius: 7px;
+      letter-spacing: 0.5px;
+      transition: background 0.16s, color 0.18s;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #e37907d2;
+      color: #fff;
+    }
 
-footer {
-  background: var(--secondary-bg);
-  color: var(--text-main);
-  padding: 2.2rem 1.2rem;
-}
-.footer-container {
-  max-width: 1170px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-}
-.footer-section {
-  flex: 1 1 180px;
-}
-.footer-section h3 {
-  font-family: 'Poppins',sans-serif;
-  font-weight: 700;
-  font-size: 1.08rem;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  border-bottom: 2.5px solid var(--accent);
-  padding-bottom: 0.3rem;
-}
-.footer-links ul { list-style: none; }
-.footer-links ul li { margin-bottom: 0.6rem; }
-.footer-links ul li a {
-  color: #c9a8c3;
-  text-decoration: none;
-  transition: color 0.14s;
-  font-weight: 500;
-}
-.footer-links ul li a:hover { color: var(--accent); }
-.footer-contact p, .footer-contact a {
-  color: #c5d5da;
-  margin-bottom: 0.7rem;
-  display: block;
-  font-weight: 500;
-  text-decoration: none;
-}
-.footer-contact a:hover { color: var(--accent); }
-.footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
-  color: #8091a8;
-  font-style: italic;
-  font-size: 0.92rem;
-}
+    /* UNIFIED FOOTER STYLES */
+    footer {
+      margin-top: 60px;
+      background-color: #dcd8d8;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      margin-bottom: 30px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer-section {
+      flex: 1 1 180px;
+    }
+    .footer-section h3 {
+      color: #2e125a;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .footer-links ul { 
+      list-style: none;
+      padding-left: 0;
+    }
+    .footer-links ul li { 
+      margin-bottom: 0.6rem;
+    }
+    .footer-links ul li a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-weight: 500;
+    }
+    .footer-links ul li a:hover { 
+      color: #07070f;
+    }
+    .footer-contact p, .footer-contact a {
+      color: #333;
+      margin-bottom: 0.7rem;
+      display: block;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .footer-contact a:hover { 
+      color: #07070f;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 10px;
+      color: #090518;
+      font-size: 0.9rem;
+    }
+    .made-by {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .komal-name {
+      background: linear-gradient(to right, #342856, #110d50);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+    .footer-bottom-links {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .footer-bottom-links a {
+      color: #090518;
+      margin: 0 10px;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .footer-bottom-links a:hover {
+      text-decoration: underline;
+    }
 
-@media (max-width: 900px) {
-  .hero { flex-direction: column; margin: 1.3rem auto 2rem; }
-  .hero-content { padding: 1.1rem 1.2rem; text-align: center;}
-  .ajmer-gallery img { width: 41vw; height: 26vw; min-width: 110px; min-height: 72px;}
-  .header-container { flex-direction: column; align-items: flex-start; }
-  nav ul { gap: 0.8rem; }
-}
-@media (max-width: 650px) {
-  .more-info, .hero-content { padding: 0.85rem 0.6rem !important; }
-  .hero-img { min-width: 120px; }
-  .footer-container { flex-direction: column; gap: 1.5rem;}
-  .logo { font-size: 1.09rem;}
-}
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      background: var(--card-bg);
+      border-radius: 18px;
+      max-width: 1200px;
+      margin: 2.3rem auto 3rem;
+      box-shadow: 0 14px 44px rgba(25,35,60,0.25);
+      overflow: hidden;
+      border: 1.5px solid var(--border);
+    }
+    .hero-img {
+      flex: 1 1 400px;
+      min-width: 320px;
+      max-height: 420px;
+      display: flex;
+      align-items: stretch;
+      background: linear-gradient(120deg, #22334d 35%, #294935 100%);
+    }
+    .hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(0.09) contrast(1.08) brightness(0.95);
+      transition: filter 0.36s, transform 0.18s;
+      cursor: pointer;
+    }
+    .hero-img img:hover {
+      filter: none;
+      transform: scale(1.035);
+    }
+    .hero-content {
+      flex: 2 1 540px;
+      padding: 2.7rem 2.5rem 2.8rem 2.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(19,30,41, 0.85) 65%, #232b39 100%);
+    }
+    .hero-content h1 {
+      font-family: 'Poppins',sans-serif;
+      font-size: 2.6rem;
+      color: var(--accent);
+      margin-bottom: 1.05rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -1px;
+    }
+    .hero-content p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+      margin-bottom: 1.7rem;
+      max-width: 580px;
+      letter-spacing: 0.01em;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: var(--primary-bg);
+      padding: 0.75rem 2.1rem;
+      font-size: 1.07rem;
+      border: none;
+      border-radius: 22px;
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      box-shadow: 0 4px 15px rgba(54, 226, 167, 0.09);
+      text-transform: uppercase;
+      transition: background 0.15s, color 0.16s, box-shadow 0.18s;
+      margin-top: 0.5rem;
+    }
+    .btn-primary:hover {
+      background: var(--accent-light);
+      color: var(--primary-bg);
+      box-shadow: 0 7px 18px var(--gallery-hover);
+    }
+
+    .more-info {
+      max-width: 780px;
+      margin: 2rem auto 4rem;
+      background: var(--card-bg);
+      padding: 2.1rem 2.8rem;
+      border-radius: 13px;
+      box-shadow: 0 7px 30px #11182566;
+      font-size: 1.10rem;
+      color: var(--text-secondary);
+      border-left: 6.5px solid var(--accent);
+      animation: fadeIn 0.8s ease both;
+      display: none;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(18px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .sikar-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.18rem;
+      max-width: 1000px;
+      margin: 2rem auto 2.7rem;
+      justify-content: center;
+    }
+    .sikar-gallery img {
+      width: 222px;
+      height: 146px;
+      object-fit: cover;
+      border-radius: 9px;
+      border: 2.5px solid var(--muted);
+      background: var(--secondary-bg);
+      box-shadow: 0 3px 13px rgba(50,210,170,0.09);
+      margin-bottom: 0.25rem;
+      filter: grayscale(0.18) brightness(0.93);
+      transition: transform 0.2s, box-shadow 0.15s, border 0.13s, filter 0.13s;
+    }
+    .sikar-gallery img:hover {
+      transform: scale(1.05) rotate(-2deg);
+      border-color: var(--accent);
+      box-shadow: 0 8px 30px var(--gallery-hover);
+      filter: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero { flex-direction: column; margin: 1.3rem auto 2rem; }
+      .hero-content { padding: 1.1rem 1.2rem; text-align: center;}
+      .sikar-gallery img { width: 41vw; height: 26vw; min-width: 110px; min-height: 72px;}
+      .header-container { flex-direction: column; align-items: flex-start; }
+      nav ul { gap: 0.8rem; }
+    }
+    @media (max-width: 650px) {
+      .more-info, .hero-content { padding: 0.85rem 0.6rem !important; }
+      .hero-img { min-width: 120px; }
+      .footer-container { flex-direction: column; gap: 1.5rem;}
+      .logo { font-size: 1.09rem;}
+    }
 
   </style>
 </head>
 <body>
-
   <header>
     <div class="header-container">
       <div class="logo">One Stop Guide</div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          
           <li><a href="ajmer.html">Ajmer</a></li>
           <li><a href="sikar.html" class="active">Sikar</a></li>
           <li><a href="kishangarh.html">Kishangarh</a></li>
@@ -289,7 +327,9 @@ footer {
           <li><a href="fatehpur.html">Fatehpur</a></li>
           <li><a href="jaipur.html">Jaipur</a></li>
           <li><a href="pune.html">Pune</a></li>
-          
+          <li><a href="kolkata.html">Kolkata</a></li>
+          <li><a href="aligarh.html">Aligarh</a></li>
+          <li><a href="burdman.html">Burdman</a></li>
         </ul>
       </nav>
     </div>
@@ -307,7 +347,7 @@ footer {
     <div class="hero-content">
       <h1>Welcome to Sikar</h1>
       <p>
-        Sikar is a city in the Shekhawati region of Rajasthan, India, famed for its grand havelis (mansions), colorful frescoes, and vibrant markets. It sits almost halfway between Jaipur and Bikaner, making it a perfect stopover or destination for those interested in Rajasthan’s lesser-trodden heritage trails.
+        Sikar is a city in the Shekhawati region of Rajasthan, India, famed for its grand havelis (mansions), colorful frescoes, and vibrant markets. It sits almost halfway between Jaipur and Bikaner.
       </p>
       <button class="btn-primary" id="toggleMoreBtn" aria-expanded="false" aria-controls="moreInfoSection">
         Show More
@@ -318,23 +358,22 @@ footer {
   <section class="more-info" id="moreInfoSection" aria-hidden="true">
     <p>
       Sikar is home to several beautiful havelis like the Radharani Haveli and Sheesh Mahal. The city is a center for Marwari culture and celebrates many festivals with great enthusiasm.
-    Key Highlights
-        <ul>
-          <li>Known for its rich Marwari culture and heritage</li>
-          <li>Famous for the Shekhawati havelis with intricate frescoes</li>
-          <li>Popular attractions include Rani Sati Dadi Temple and Khatu Shyamji Temple</li>
-          <li>Offers a blend of traditional and modern Rajasthani life</li>
-        </ul>
+      Key Highlights
+      <ul>
+        <li>Known for its rich Marwari culture and heritage</li>
+        <li>Famous for the Shekhawati havelis with intricate frescoes</li>
+        <li>Popular attractions include Rani Sati Dadi Temple and Khatu Shyamji Temple</li>
+        <li>Offers a blend of traditional and modern Rajasthani life</li>
+      </ul>
     </p>
     <p>
       It is also a major educational hub in the Shekhawati region and offers visitors a glimpse of traditional Rajasthani life blended with modern progress.
     </p>
   </section>
-  <div class ="sikar-gallery">
 
+  <div class ="sikar-gallery">
     <h2>Sikar Gallery</h2>
     <div class="gallery-images">
-     
       <img src="images/shekhawati.jpg"  alt="Shekhawati havelis" />
       <img src="images/sikar2.jpg" alt="fort" />
       <img src="images/Khatu-shyam-ji-temple-sikar-6.jpg" alt="Khatu-shyam-ji-temple" />
@@ -343,21 +382,24 @@ footer {
 
   <footer>
     <div class="footer-container">
-      <div class="footer-section footer-links" aria-label="Explore cities links">
+      <div class="footer-section footer-links">
         <h3>Explore Cities</h3>
         <ul>
-           <li><a href="ajmer.html">Ajmer</a></li>
-           <li><a href="sikar.html" aria-current="page">Sikar</a></li>
-           <li><a href="kishangarh.html">Kishangarh</a></li>
+          <li><a href="ajmer.html">Ajmer</a></li>
+          <li><a href="sikar.html">Sikar</a></li>
+          <li><a href="kishangarh.html">Kishangarh</a></li>
           <li><a href="laxmangarh.html">Laxmangarh</a></li>
           <li><a href="kota.html">Kota</a></li>
           <li><a href="delhi.html">Delhi</a></li>
           <li><a href="fatehpur.html">Fatehpur</a></li>
-         <li><a href="jaipur.html">Jaipur</a></li>
+          <li><a href="jaipur.html">Jaipur</a></li>
           <li><a href="pune.html">Pune</a></li>
+          <li><a href="kolkata.html">Kolkata</a></li>
+          <li><a href="aligarh.html">Aligarh</a></li>
+          <li><a href="burdman.html">Burdman</a></li>
         </ul>
       </div>
-      <div class="footer-section footer-contact" aria-label="Contact information">
+      <div class="footer-section footer-contact">
         <h3>Contact Us</h3>
         <p>Email: <a href="mailto:support@onestopguide.com">support@onestopguide.com</a></p>
         <p>Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
@@ -369,8 +411,13 @@ footer {
         </p>
       </div>
     </div>
-    <div class="footer-bottom">
-      &copy; 2025 One Stop Guide | Created by Komal & Khushi
+    <p class="made-by">
+      Made by <span class="komal-name">Komal Khatod & Khushi Poonia</span> | © 2025 One Stop Guide
+    </p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a> |
+      <a href="#">Terms</a> |
+      <a href="#">Back to Top ↑</a>
     </div>
   </footer>
 
